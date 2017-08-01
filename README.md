@@ -41,6 +41,6 @@ accurately (in the L2 sense).
 
 ## Running the demo
 
-This demo requires the [MRIT](github.com/litearc/mrit) library to be setup.
-Then, to run the demo, simply execute the script `go`.
+This demo requires the [MRIT](https://github.com/litearc/mrit) library to be
+setup. Then, to run the demo, simply execute the script `go`.
 
