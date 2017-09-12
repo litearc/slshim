@@ -28,7 +28,7 @@ A = 3.5; % amps used for coil calibration
 % get mask for each magnitude image
 s = zeros(size(m));
 for i = 1:nshim
-  s(:,:,:,i) = mask(m(:,:,:,i));
+  s(:,:,:,i) = mask2(m(:,:,:,i));
 end
 s = prod(s,4); % get intersection of masks for fitting spherical harmonics
 s = imerode(s, strel('disk',4));
