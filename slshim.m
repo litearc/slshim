@@ -77,6 +77,11 @@ function [sShims dShims] = slshim(axB0, axMask, axXYZ, axFov, sgB0, sgMask, ...
   show       = def(v, 'show', 0);
 
   % ............................................................................
+
+  % make masks logical
+  if ~islogical(axMask) axMask = boolean(axMask); end
+  if ~islogical(sgMask) sgMask = boolean(sgMask); end
+
   [ny, nx, nz] = size(axB0);
   nsShims = 3; % # static shims (excluding xz and yz)
   ndShims = 3; % # dynamic shims (excluding z, which is handled later)
