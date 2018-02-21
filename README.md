@@ -1,7 +1,7 @@
 
 # Slice-based dynamic shimming
 
-written by Haisam Islam, collabation with Christine Law
+written by Haisam Islam, collaboration with Christine Law
 
 ## About
 
